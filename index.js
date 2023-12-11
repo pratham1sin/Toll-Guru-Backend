@@ -34,7 +34,7 @@ app.post('/origin-destination-waypoints', async (req, res) => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'x-api-key': 'Ln4NFdFDDntLMq7dpPTrMFMDr6H4N48J',
+                'x-api-key': '4BnDDg8LPFtR6mGrJg4MfPNtrHhH9p9n',
               },
             body: JSON.stringify({from, to})
           });
