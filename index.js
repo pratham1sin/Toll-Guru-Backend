@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const cors = require('cors')
 
 // Enable CORS for all routes
 app.use((req, res, next) => {
@@ -17,6 +18,8 @@ app.use((req, res, next) => {
     res.header('Access-Control-Allow-Credentials', 'true');
     res.status(204).end();
   });
+
+  app.use(cors())
 
   app.use(express.json())
   app.use(express.urlencoded({extended:true}))
